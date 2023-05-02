@@ -10,6 +10,7 @@ authors = [
 ]
 description = "Loguru all over the world. | 全世界都在用 Lo~guru~~"
 readme = "README.md"
+long_description_content_type = "text/markdown"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
