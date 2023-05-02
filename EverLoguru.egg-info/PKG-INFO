@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: EverLoguru
-Version: 1.0.2
+Version: 1.1.0
 Summary: Loguru all over the world. | 全世界都在用 Lo~guru~~
 Home-page: 
 Author: cyan
@@ -14,7 +14,48 @@ Requires-Python: >=3.8
 Description-Content-Type: text/markdown
 
 # Loguru Ever
-Use & replace logging to loguru everywhere!
+[![PyPI version](https://img.shields.io/pypi/v/EverLoguru.svg)](https://pypi.org/project/EverLoguru/)
+[![PyPI license](https://img.shields.io/pypi/l/EverLoguru.svg)](https://pypi.org/project/EverLoguru/)
+[![PyPI downloads](https://img.shields.io/pypi/dm/EverLoguru.svg)](https://pypi.org/project/EverLoguru/)
+Use and replace logging to loguru everywhere!
 
 _**Loguru used all over the world. | 全世界都在用 Loguru**_
+
+## Installation
+You can install Loguru Ever from PyPI:  
+```shell
+pip install ever-loguru
+```
+
+## Usage
+Loguru Ever is a simple package that replaces the standard logging module with loguru. Loguru is a modern and easy-to-use logging library for Python. With Loguru Ever, you can use loguru features in any module that uses logging, without changing any code.  
+  
+To use Loguru Ever, you just need to import it and call the replace_logging function at the beginning of your program. This will replace the logging module in the sys.modules dictionary with loguru. After that, you can use loguru as usual.  
+
+For example, if you have a module called foo.py that uses logging:  
+
+```python
+import logging
+
+logger = logging.getLogger(__name__)
+
+def bar():
+    logger.info("Hello from bar")
+```
+
+You can use Loguru Ever in your main script like this:  
+
+```python
+import ever_loguru
+ever_loguru.install_class()
+
+import foo
+
+foo.bar()
+```
+
+This will output:  
+```log
+2021-12-15 16:13:49.123 | INFO     | foo:bar:5 - Hello from bar
+```
 

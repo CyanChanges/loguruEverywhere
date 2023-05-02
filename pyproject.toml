@@ -4,13 +4,12 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "EverLoguru"
-version = "1.0.2"
+version = "1.1.0"
 authors = [
     { name = "Cyan", email = "lc_shizuku@outlook.com" }
 ]
 description = "Loguru all over the world. | 全世界都在用 Lo~guru~~"
 readme = "README.md"
-long_description_content_type = "text/markdown"
 requires-python = ">=3.8"
 classifiers = [
     "Programming Language :: Python :: 3",
