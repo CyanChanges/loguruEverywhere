@@ -1,8 +1,9 @@
 from loguru import logger
-from logging import PlaceHolder
+
+from .mask import FakeLogger
 
 
-class LoggingLoguruWrapper(PlaceHolder):
+class LoggingLoguruWrapper(FakeLogger):
     def __init__(self, name: str = None, _depth=0):
         self.name = name
         self._depth = _depth
@@ -11,7 +12,7 @@ class LoggingLoguruWrapper(PlaceHolder):
         return getattr(logger.opt(depth=self._depth), item)
 
 
-class AsyncLoggingLoguruWrapper(PlaceHolder):
+class AsyncLoggingLoguruWrapper(FakeLogger):
     def __init__(self, name: str = None, _depth=2):
         self.name = name
         self._depth = _depth

@@ -8,4 +8,5 @@ EverLoguru.egg-info/top_level.txt
 ever_loguru/__init__.py
 ever_loguru/handler.py
 ever_loguru/install.py
+ever_loguru/mask.py
 ever_loguru/wrapper.py

@@ -44,6 +44,7 @@ def install_class(replace_exist: bool = False):
     setattr(sys.modules['logging'], "Logger", LoggingLoguruWrapper)
     setattr(sys.modules['logging'].Logger, "manager", _Logger.manager)
     setattr(sys.modules['logging'].Logger.manager, "loggerClass", LoggingLoguruWrapper)
+
     if replace_exist:
         update_exist()
 
