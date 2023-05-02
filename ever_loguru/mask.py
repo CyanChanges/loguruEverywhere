@@ -6,4 +6,4 @@ class FakeLogger:
         if instance == logging.Logger:
             return True
         else:
-            return False
+            return issubclass(self.__class__, FakeLogger)
