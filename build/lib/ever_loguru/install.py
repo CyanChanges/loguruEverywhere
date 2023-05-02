@@ -40,7 +40,9 @@ def install_class(replace_exist: bool = False):
     :param replace_exist: replace_exist
     :return: 
     """
+    _Logger = getattr(sys.modules['logging'], "Logger")
     setattr(sys.modules['logging'], "Logger", LoggingLoguruWrapper)
+    setattr(sys.modules['logging'].Logger, "manager", _Logger.manager)
     if replace_exist:
         update_exist()
 
