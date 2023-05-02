@@ -1,7 +1,7 @@
 # Loguru Ever
 [![PyPI version](https://img.shields.io/pypi/v/EverLoguru.svg)](https://pypi.org/project/EverLoguru/)
-[![PyPI license](https://img.shields.io/pypi/l/EverLoguru.svg)](https://pypi.org/project/EverLoguru/)
-[![PyPI downloads](https://img.shields.io/pypi/dm/EverLoguru.svg)](https://pypi.org/project/EverLoguru/)
+[![GitHub Latest](https://img.shields.io/github/downloads/Chinese-Cyq20100313/loguruEverywhere/latest/total)](https://github.com/Chinese-Cyq20100313/loguruEverywhere/releases)
+  
 Use and replace logging to loguru everywhere!
 
 _**Loguru used all over the world. | 全世界都在用 Loguru**_

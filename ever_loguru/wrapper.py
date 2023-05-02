@@ -3,16 +3,17 @@ from logging import PlaceHolder
 
 
 class LoggingLoguruWrapper(PlaceHolder):
-    def __init__(self, __placeholder: str = None, _depth=0):
+    def __init__(self, name: str = None, _depth=0):
+        self.name = name
         self._depth = _depth
-        pass
 
     def __getattr__(self, item):
         return getattr(logger.opt(depth=self._depth), item)
 
 
 class AsyncLoggingLoguruWrapper(PlaceHolder):
-    def __init__(self, __placeholder: str = None, _depth=2):
+    def __init__(self, name: str = None, _depth=2):
+        self.name = name
         self._depth = _depth
 
     @staticmethod
