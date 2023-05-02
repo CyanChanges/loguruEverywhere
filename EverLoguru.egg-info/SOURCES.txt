@@ -1,4 +1,5 @@
 README.md
+pyproject.toml
 setup.py
 EverLoguru.egg-info/PKG-INFO
 EverLoguru.egg-info/SOURCES.txt
