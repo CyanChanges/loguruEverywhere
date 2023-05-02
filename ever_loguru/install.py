@@ -59,7 +59,7 @@ def install_force(replace_exist: bool = False):
     install()
     sys.modules['logging'].Logger.manager.getLogger = LoggingLoguruWrapper
     sys.modules['logging'].Logger.manager.loggerClass = LoggingLoguruWrapper
-    setattr(sys.modules['logging'].Logger.manager, "_loggerClass", LoggingLoguruWrapper)
+    setattr(sys.modules['logging'].Logger.manager, "loggerClass", LoggingLoguruWrapper)
     if replace_exist:
         update_exist()
 

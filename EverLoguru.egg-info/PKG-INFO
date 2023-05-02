@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: EverLoguru
-Version: 1.1.2
+Version: 1.1.3
 Summary: Loguru all over the world. | 全世界都在用 Lo~guru~~
 Home-page: 
 Author: cyan
@@ -24,7 +24,7 @@ _**Loguru used all over the world. | 全世界都在用 Loguru**_
 ## Installation
 You can install Loguru Ever from PyPI:  
 ```shell
-pip install ever-loguru
+pip install EverLoguru
 ```
 
 ## Usage
