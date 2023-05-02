@@ -9,7 +9,7 @@ _**Loguru used all over the world. | 全世界都在用 Loguru**_
 ## Installation
 You can install Loguru Ever from PyPI:  
 ```shell
-pip install ever-loguru
+pip install EverLoguru
 ```
 
 ## Usage
