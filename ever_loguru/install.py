@@ -42,9 +42,11 @@ def update_exist_instancecheck():
             functools.partial(FakeLogger.__instancecheck__, logging_logger)
         )
 
+
 # noinspection PyPep8Naming
-def install():
+def install_handlers():
     sys.modules['logging'].Logger.callHandlers = _callHandlers_wrapper
+
 
 # noinspection PyPep8Naming
 def install_force(replace_exist: bool = False):
@@ -63,6 +65,7 @@ def install_force(replace_exist: bool = False):
     else:
         update_exist_instancecheck()
 
+
 # noinspection PyPep8Naming
 def install_class(replace_exist: bool = False):
     """
@@ -70,8 +73,7 @@ def install_class(replace_exist: bool = False):
     :param replace_exist: Replace exist logger
     :return:
     """
-    install()
-    sys.modules['logging'].Logger.manager.getLogger = LoggingLoguruWrapper
+
     sys.modules['logging'].Logger.manager.loggerClass = LoggingLoguruWrapper
     setattr(sys.modules['logging'].Logger.manager, "loggerClass", LoggingLoguruWrapper)
 
@@ -79,6 +81,7 @@ def install_class(replace_exist: bool = False):
         update_exist()
     else:
         update_exist_instancecheck()
+
 
 # noinspection PyPep8Naming
 def remove():

@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='EverLoguru',
-    version='1.1.5',
+    version='1.1.6',
     packages=['ever_loguru'],
     url='',
     license='',
