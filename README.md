@@ -13,11 +13,11 @@ pip install EverLoguru
 ```
 
 ## Usage
-Loguru Ever is a simple package that replaces the standard logging module with loguru. Loguru is a modern and easy-to-use logging library for Python. With Loguru Ever, you can use loguru features in any module that uses logging, without changing any code.  
+EverLoguru is a simple package that replaces the standard logging module with loguru. Loguru is a modern and easy-to-use logging library for Python. With Loguru Ever, you can use loguru to log in any module that uses logging, without changing any code.  
   
-To use Loguru Ever, you just need to import it and call the replace_logging function at the beginning of your program. This will replace the logging module in the sys.modules dictionary with loguru. After that, you can use loguru as usual.  
+To use EverLoguru, you just need to import it and call the `install_class` function at the beginning of your program. This will replace the logging module in the sys.modules dictionary with loguru. After that, you can use loguru as usual.  
 
-For example, if you have a module called foo.py that uses logging:  
+For example, if you have a module called `foo.py` that uses logging:  
 
 ```python
 import logging
@@ -28,7 +28,7 @@ def bar():
     logger.info("Hello from bar")
 ```
 
-You can use Loguru Ever in your main script like this:  
+You can use EverLoguru in your main script like this:  
 
 ```python
 import ever_loguru
